@@ -49,4 +49,16 @@ $(function(){
        
     })
     
+    
+    /* flatform 모달창 */
+    $('.header-btn a').click(function(){
+        $('.modal').addClass('open')
+        
+    })
+     $('.modal .close_btn').click(function(){
+        $('.modal').removeClass('open')
+        
+    })
+    
+    
 })

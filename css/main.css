@@ -83,6 +83,11 @@
         text-align: center;
         font-size:20px;
         color:skyblue;
+        transition: all 0.3s ease;
+    }
+    .login a:hover i{
+        color:gold;
+
     }
     /* 배경 */
     header .bg{
@@ -200,7 +205,7 @@
 
     /* 플랫폼 모달 */
     header .modal{
-        display: none;
+        display:none;
        position: absolute;
         left:0;
         top:0;
@@ -210,6 +215,10 @@
         height:100vh;
         background-color: rgba(0,0,0,0.9);
         z-index: 20;
+        transition: all 0.3s ease;
+    }
+    header .modal.open{
+        display: block;
     }
     header .modal .close_btn{
         display: block;
@@ -276,9 +285,19 @@
         }
         
         /* 모달플랫폼 */
+        header .flatform{
+            width:80%;
+            height:42%;
+        }
         header .flatform li{
-            width:23%;
-            margin: 1%;
+            width:21%;
+            margin: 2%;
+        }
+        header .flatform li a{
+            padding-top:83%;
+        }
+        header .flatform li a{
+            background-size:50%;
         }
     }
      
@@ -376,7 +395,22 @@
         .header-btn a{
             width: 200px;
             font-size:16px;
-            
+        }
+        
+        /* 모달플랫폼 */
+        header .flatform{
+            width:80%;
+            height:47%;
+        }
+        header .modal .close_btn i{
+            font-size:18px;
+        }
+        header .flatform h2{
+            font-size:18px;
+        }
+        
+        header .flatform p{
+            font-size:16px;
         }
         
  
@@ -440,6 +474,22 @@
             line-height: 60px;
             font-size:18px;
             
+        }
+        
+        /* 모달플랫폼 */
+        header .flatform{
+            width:80%;
+            height:50%;
+        }
+        header .modal .close_btn i{
+            font-size:22px;
+        }
+        header .flatform h2{
+            font-size:20px;
+        }
+        
+        header .flatform p{
+            font-size:18px;
         }
  
     }
