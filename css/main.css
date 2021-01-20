@@ -200,7 +200,7 @@
 
     /* 플랫폼 모달 */
     header .modal{
-        display: block;
+        display: none;
        position: absolute;
         left:0;
         top:0;
