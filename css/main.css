@@ -276,6 +276,104 @@
         color:#000;
     }
 
+    /* login_form */
+    header .login_form{
+        display: block;
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        height:100vh;
+background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-repeat;
+        background-size:cover;
+        background-position:center;
+        z-index: 20;
+    } 
+    .login_form .login_close{
+        position: absolute;
+        right:8%;
+        top:5%;
+        font-size:25px;
+        color:#fff;
+    }
+    .login_form .form_box{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px 10px rgba(0,0,0,0.6);
+    }
+    .form_box .button_box{
+        width: 320px;
+        margin: 20px auto;
+        position: relative;
+        box-shadow: 0 0 5px 2px skyblue;
+    }
+    .form_box .button_box #btn_bg{
+        position: absolute;
+        left:0;
+        top:0;
+        background-color: red;
+        width: 154px;
+        height:100%;
+        z-index: -1;
+        border-radius: 10px;
+        background:linear-gradient(to right,#89f7fe,#66a6ff);
+        
+    }
+    .form_box .button_box .toggle_btn{
+        width: 154px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    .form_box .social_media{
+        text-align: center;
+    }
+    .form_box .social_media a{
+        display: inline-block;
+        width: 30px; 
+        height: 30px;
+        margin:0 10px;
+    }
+    .form_box .social_media a img{
+        width: 100%;
+    }
+    .form_box .input_group{
+        width: 320px;
+        margin:20px auto;
+    }
+    .form_box .input_group .input-field{
+        display: block;
+        width: 100%;
+        padding:10px 0;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #cfcfcf;
+    }
+    .form_box .input_group .chk{
+        margin: 20px 10px 20px 0;
+    }
+    .form_box .input_group label{
+        position: relative;
+        font-size:12px;
+        top:-2px;
+    }
+    .form_box .input_group .register{
+        width: 100%;
+        padding: 10px;
+        background:linear-gradient(to right,#89f7fe,#66a6ff);
+    }
+    .from_box #login{
+        display: block;
+    }
+    .form_box #register{
+        display: none;
+    }
+
     @media(min-width:768px){
         .header-btn a{
             width: 160px;

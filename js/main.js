@@ -60,5 +60,41 @@ $(function(){
         
     })
     
+    /* 로그인창 */
+    
+    var toggle_btn = $('.form_box .toggle_btn'),
+        register = $('.form_box #register'),
+        user_login = $('.form_box #login'),
+        btn_bg = $('.form_box #btn_bg')
+    
+    toggle_btn.click(function(){
+        var target = $(this)
+        var idx = target.index()
+        
+        console.log(idx)
+        
+        if (idx == 1){
+            user_login.show()
+            register.hide()
+            btn_bg.css('left','0')
+            
+            
+        }else if(idx ==2){
+            register.show()
+            user_login.hide()
+            btn_bg.css('left','166px')
+        }
+    })
+    
+    /* close 버튼 */
+    $('.login a').click(function(){
+         $('.login_form').show() 
+    })
+    $('.login_close').click(function(){
+        $('.login_form').hide()
+    })
+    
+    
+    
     
 })

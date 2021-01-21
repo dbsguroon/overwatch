@@ -94,6 +94,35 @@
                     </ul>
                 </div>
             </div>
+            <div class="login_form">
+                <a href="#" class="login_close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="form_box">
+                    <div class="button_box">
+                        <button id="btn_bg"></button>
+                        <button class="toggle_btn">로그인</button>
+                        <button class="toggle_btn">등록</button>
+                    </div>
+                    <div class="social_media">
+                        <a href="#"><img src="img/facebook.png" alt="페이스북"></a>
+                        <a href="#"><img src="img/kakao.png" alt="카카오"></a>
+                        <a href="#"><img src="img/twitter.png" alt="트위터"></a>
+                    </div>
+                    <form id="login" action="post" class="input_group">
+                        <input type="text" class="input-field" placeholder="아이디" required>
+                        <input type="password"  class="input-field" placeholder="비빌번호"  required>
+                        <input type="checkbox" id="pw_chk"  class="chk" >
+                        <label for="pw_chk">패스워드 기억</label>
+                        <button type="submit" class="register">로그인</button>
+                    </form>
+                    <form id="register" action="post" class="input_group">
+                        <input type="text" class="input-field" placeholder="아이디 등록" required>
+                        <input type="password" class="input-field" placeholder="패스워드 등록" required>
+                        <input type="checkbox" id="agree_chk" class="chk">
+                        <label for="agree_chk">나는 모든 조건에 동의합니다.</label>
+                        <button type="submit" class="register">등록하기</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
     <main></main>
