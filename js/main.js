@@ -21,6 +21,15 @@ $(function(){
                 $('nav>ul').removeClass('open')
             }
         })
+        
+        $(window).scroll(function(){
+            var w_scroll = $(window).scrollTop()
+            
+            if(w_scroll > 400){
+            $('.hamburger').removeClass('open')
+            $('nav>ul').removeClass('open') 
+            }
+        })
     })
     
     /* 서브메뉴 클릭시 */
@@ -36,7 +45,6 @@ $(function(){
         }
         
     
-        
         $(window).resize(function(){
             var win_w =$(this).outerWidth()
             
@@ -46,6 +54,7 @@ $(function(){
             }
             
         })
+        
        
     })
     
@@ -94,7 +103,7 @@ $(function(){
         }
     })
     
-    /* close 버튼 */
+    /*로그인 close 버튼 */
     $('.login a').click(function(){
          $('.login_form').show() 
          $('body').css({
@@ -109,6 +118,29 @@ $(function(){
              height:'auto',
          })
     })
+    
+    
+    /* stroy  progress bar*/
+    $('.story_bar li').click(function(){
+        var idx =$(this).index()
+        var story_section = $('.story_container>div')
+        
+        $(this).addClass('active').prevAll().addClass('active')
+        $(this).nextAll().removeClass('active')
+        story_section.removeClass('open')
+        story_section.eq(idx).addClass('open')
+        
+        if(idx == 0){
+            $('.line-process').css('width','5%')
+        }else if(idx == 1){
+            $('.line-process').css('width','30%')
+        }else if(idx == 2){
+            $('.line-process').css('width','60%')
+        }else if(idx == 3){
+            $('.line-process').css('width','100%')
+        }
+    })
+    
     
     
     

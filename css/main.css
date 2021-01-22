@@ -5,6 +5,7 @@
         padding-top:30px;
         position: relative;
         height:100vh;
+        box-sizing: border-box;
     }
     .container{
         max-width:1280px;
@@ -19,7 +20,10 @@
     #story{
         width: 100%;
         height: 100vh;
+        position: relative;
         background-color: #000;
+        color:#fff;
+        box-sizing: border-box;
     }
 
 
@@ -27,15 +31,15 @@
     /* 햄버거 메뉴 */
     .hamburger{
         position: relative;
-        width: 30px;
-        height: 18px;
+        width: 20px;
+        height: 16px;
     }
 
     
     .hamburger span{
         display: block;
         width:100%;
-        height:4px;
+        height:3px;
         background-color:#000;
         transition: all 0.3s ease;
     }
@@ -57,7 +61,7 @@
     }
 
     .hamburger span:nth-child(2){
-        margin:3px 0;
+        margin:2px 0;
     }
     /* 로고 */
     .logo{    
@@ -137,7 +141,7 @@
     nav>ul>li a{
         display: block;
         padding:20px;
-        font-size:16px;
+        font-size:15px;
         border-radius:5px;
         border-bottom: 1px solid #cfcfcf;
         background-color: skyblue;
@@ -388,12 +392,99 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
 
 
     /* section story */
-  
+    #story h2{
+        font-size:16px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    #story .container{
+        width: 100%;
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+    }
 
+    .story_container>.story{
+        width:70%;
+        margin:0 auto;
+        padding:20px;
+    }
 
+    .story_container .story img{
+        width: 100%;
+    }
 
+    .story_container .story h3{
+        font-size:14px;
+        margin:10px 0;
+    }
 
+    .story_container .story p{
+        font-size:12px;
+    }
+    .story_container .story{
+        display: none;
+    }
+    .story_container .story.open{
+            display: block;
+    }
+    #story .story_bar{
+        width: 90%;
+        height:46px;
+        margin:20px auto;
+        position: relative;
+    }
+    #story .story_bar ul{
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+    }
+    #story .story_bar li{
+        float:left;
+        width: 25%;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        text-align: center;
+        font-size:14px;
+    }
+    #story .story_bar li:before{
+        content:'';
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: gray;
+        border: 5px solid #fff;
+        border-radius: 50%;
+        margin:0 auto 10px auto;
+        position: relative;
+        z-index: 2;
+    }
+    #story .story_bar li:hover:before,
+    #story .story_bar li.active:before{
+        border-color:deepskyblue;
+        background-color: #000;
+    }
+    #story .story_bar .line{
+        position: absolute;
+        left:12%;
+        top:8px;
+        width: 84%;
+        height: 2px;
+        background-color: #fff;
+        z-index: 1;
+    }
 
+    #story .story_bar .line-process{
+        position: absolute;
+        left:0;
+        top:0;
+        width:5%;
+        height: 100%;
+        background-color: skyblue;
+        transition: all 0.3s ease;
+    }
 
     @media(min-width:768px){
         .header-btn a{
