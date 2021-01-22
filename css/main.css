@@ -573,7 +573,7 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
         nav>ul>li ul>li>a{
             width: 100%;
             box-sizing: border-box;
-            text-indent: 10px;
+            text-indent:0;
         }
         /* 로그인 */
         header .login{
@@ -621,6 +621,16 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
         header .flatform p{
             font-size:16px;
         }
+        /* story */
+        #story h2{
+            font-size:18px;
+        }
+        .story_container .story h3{
+            font-size:16px;
+        }
+        .story_container .story p{
+            font-size:14px;
+        }
         
  
     }
@@ -660,7 +670,7 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
         nav>ul>li ul>li>a{
             width: 100%;
             box-sizing: border-box;
-            text-indent: 10px;
+            text-indent: 0;
             padding:10px;
         }
         /* 로그인 */
@@ -697,17 +707,26 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
         .img_wrap{
             text-align: center;
         }
+        #story h2{
+            font-size:20px;
+            margin-bottom: 10px;
+        }
+        .story_container .story{
+            padding: 0;
+        }
         .story_container .story img{
             width: 1000px;
             height: 400px;
         }
         .story_container .story h3{
             text-align: center;
+            font-size:18px;
         }
         .story_container .story p{
             text-align: center;
             max-width: 1000px;
             margin:0 auto;
+            font-size:16px;
         }
  
     }
