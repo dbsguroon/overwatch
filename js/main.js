@@ -53,10 +53,18 @@ $(function(){
     /* flatform 모달창 */
     $('.header-btn a').click(function(){
         $('.modal').addClass('open')
+          $('body').css({
+             overflow:'hidden',
+             height:'100%',
+         })
         
     })
      $('.modal .close_btn').click(function(){
         $('.modal').removeClass('open')
+        $('body').css({
+             overflow:'auto',
+             height:'auto',
+         })
         
     })
     
@@ -89,9 +97,17 @@ $(function(){
     /* close 버튼 */
     $('.login a').click(function(){
          $('.login_form').show() 
+         $('body').css({
+             overflow:'hidden',
+             height:'100%',
+         })
     })
     $('.login_close').click(function(){
         $('.login_form').hide()
+          $('body').css({
+             overflow:'auto',
+             height:'auto',
+         })
     })
     
     
