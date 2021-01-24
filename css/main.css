@@ -6,10 +6,11 @@
         position: relative;
         height:100vh;
         box-sizing: border-box;
+        overflow: hidden;
     }
     .container{
         max-width:768px;
-        height: 100vh;
+        height: 100%;
         margin:0 auto;
     }
     
@@ -25,6 +26,12 @@
         background-color: #000;
         color:#fff;
         box-sizing: border-box;
+        overflow: hidden;
+        background:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/스토리배경.jpg);
+       
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
     }
 
 
@@ -391,14 +398,8 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
         display: none;
     }
 
-
     /* section story */
-    #story h2{
-        font-size:16px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    #story .container{
+    .story_con{
         width: 100%;
         position: absolute;
         left:50%;
@@ -406,87 +407,104 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
         transform: translate(-50%,-50%);
     }
 
-    .story_container>.story{
-        width:100%;
+    .overwatch_story{
+        width: 90%;
         margin:0 auto;
-        padding:20px;
-        box-sizing: border-box;
+        max-width: 1000px;
     }
-
-    .story_container .story img{
+    .overwatch_story>h2{
+        margin-bottom: 20px;
+        font-size:24px;
+    }
+    .overwatch_story img{
         width: 100%;
+        object-fit: cover;
     }
-
-    .story_container .story h3{
+    .overwatch_story .story_desc{
+            padding:15px 0;
+        line-height: 1.4;
+    }
+    .overwatch_story .story_desc h3{
+        margin-bottom:10px;
         font-size:14px;
-        margin:10px 0;
     }
 
-    .story_container .story p{
+    .overwatch_story .story_desc p{
+        margin-bottom:10px;
         font-size:12px;
     }
-    .story_container .story{
+    .overwatch_story .story.active{
+        display: block;
+    }
+    .overwatch_story .story{
         display: none;
     }
-    .story_container .story.open{
-            display: block;
+
+    .overwatch_story .creation{
+        display: none;
     }
-    #story .story_bar{
+    .overwatch_story .demo{
+        display: none;
+    }
+    .overwatch_story .recall{
+        display: none;
+    }
+
+    .story_con .bar_list{
         width: 90%;
-        height:46px;
-        margin:20px auto;
+        margin:0 auto;
+    }
+
+    .story_con .bar_list{
         position: relative;
     }
-    #story .story_bar ul{
-        position: absolute;
-        left:0;
-        top:0;
-        width: 100%;
-    }
-    #story .story_bar li{
-        float:left;
-        width: 25%;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        text-align: center;
+
+    .story_con .bar_list li{
+        display: inline-block;
         font-size:14px;
+        width: 24%;
+        text-align: center;
+        cursor: pointer;
     }
-    #story .story_bar li:before{
+    .story_con .bar_list li:before{
         content:'';
         display: block;
         width: 6px;
         height: 6px;
         background-color: gray;
-        border: 5px solid #fff;
         border-radius: 50%;
-        margin:0 auto 10px auto;
-        position: relative;
-        z-index: 2;
+        border:5px solid #fff;
+        margin:0 auto 5px auto;
+        transition: all 0.3s ease;
     }
-    #story .story_bar li:hover:before,
-    #story .story_bar li.active:before{
-        border-color:deepskyblue;
-        background-color: #000;
+    .story_con .bar_list li.active:before{
+        border-color:skyblue;
+        background-color:#000;
     }
-    #story .story_bar .line{
-        position: absolute;
-        left:12%;
-        top:8px;
-        width: 84%;
-        height: 2px;
-        background-color: #fff;
-        z-index: 1;
+    
+    .bar_list{
+        max-width: 1000px;
     }
 
-    #story .story_bar .line-process{
+    .bar_list .bar{
+        width: 100%;
+        height:3px;
+        background-color: #fff;
         position: absolute;
         left:0;
-        top:0;
-        width:5%;
-        height: 100%;
+        top:7px;
+        z-index: -1;
+    }
+    .bar_list .bar .progress_bar{
+        position: absolute;
+        width:12%;
+        height:100%;
         background-color: skyblue;
         transition: all 0.3s ease;
     }
+
+
+    
 
     @media(min-width:768px){
         .container{
@@ -513,6 +531,19 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
         }
         header .flatform li a{
             background-size:50%;
+        }
+        
+        
+        /* story */
+        
+        #story .overwatch_story>h2{
+            font-size:24px;
+        }
+        #story .overwatch_story .story_desc h3{
+            font-size:14px;
+        }
+        #story .overwatch_story .story_desc p{
+            font-size:12px;
         }
     }
      
@@ -633,6 +664,17 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
             font-size:14px;
         }
         
+        /* story */
+        
+        #story .overwatch_story>h2{
+            font-size:30px;
+        }
+        #story .overwatch_story .story_desc h3{
+            font-size:16px;
+        }
+        #story .overwatch_story .story_desc p{
+            font-size:14px;
+        }
  
     }
 
@@ -727,6 +769,18 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
             text-align: center;
             max-width: 1000px;
             margin:0 auto;
+            font-size:16px;
+        }
+        
+        /* story */
+        
+        #story .overwatch_story>h2{
+            font-size:40px;
+        }
+        #story .overwatch_story .story_desc h3{
+            font-size:18px;
+        }
+        #story .overwatch_story .story_desc p{
             font-size:16px;
         }
  

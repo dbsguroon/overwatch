@@ -1,5 +1,13 @@
 $(function(){
     
+    /* 리사이즈 될떄 */
+    
+    $(window).resize(function(){
+        
+        
+        
+    })
+    
     
     /* 메뉴클릭시 */
     $('.hamburger').click(function(){
@@ -121,23 +129,28 @@ $(function(){
     
     
     /* stroy  progress bar*/
-    $('.story_bar li').click(function(){
-        var idx =$(this).index()
-        var story_section = $('.story_container>div')
-        
+    $('.bar_list li').click(function(){
         $(this).addClass('active').prevAll().addClass('active')
         $(this).nextAll().removeClass('active')
-        story_section.removeClass('open')
-        story_section.eq(idx).addClass('open')
+        var idx = $(this).index()
+        var cont = $('.overwatch_story .story')
         
         if(idx == 0){
-            $('.line-process').css('width','5%')
-        }else if(idx == 1){
-            $('.line-process').css('width','30%')
-        }else if(idx == 2){
-            $('.line-process').css('width','60%')
-        }else if(idx == 3){
-            $('.line-process').css('width','100%')
+            $(cont).siblings().removeClass('active')
+            $(cont).eq(idx).addClass('active')
+            $('.progress_bar').css('width','12%')
+        }else if(idx ==1){
+            $(cont).siblings().removeClass('active')
+            $(cont).eq(idx).addClass('active')
+                      $('.progress_bar').css('width','36%')
+        }else if(idx ==2){
+            $(cont).siblings().removeClass('active')
+            $(cont).eq(idx).addClass('active')
+            $('.progress_bar').css('width','60%')
+        }else if(idx ==3){
+            $(cont).siblings().removeClass('active')
+            $(cont).eq(idx).addClass('active')
+            $('.progress_bar').css('width','100%')
         }
     })
     

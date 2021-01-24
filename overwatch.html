@@ -110,8 +110,8 @@
                     </div>
                     <form id="login" action="post" class="input_group">
                         <input type="text" class="input-field" placeholder="아이디" required>
-                        <input type="password"  class="input-field" placeholder="비빌번호"  required>
-                        <input type="checkbox" id="pw_chk"  class="chk" >
+                        <input type="password" class="input-field" placeholder="비빌번호" required>
+                        <input type="checkbox" id="pw_chk" class="chk">
                         <label for="pw_chk">패스워드 기억</label>
                         <button type="submit" class="register">로그인</button>
                     </form>
@@ -127,54 +127,62 @@
         </div>
     </header>
     <main>
-        <section id="story">
-            <div class="container">
-               <div class="row">
-                    <div class="story_container">
-                       <h2>오버워치 이야기</h2>
-                       <div class="story open">
-                            <div class="img_wrap">
-                                <img src="img/%EC%98%B4%EB%8B%89%EC%82%AC%ED%83%9C.jpg" alt="옴닉사태">
+       <section id="story">
+           <div class="container">
+               <div class="story_con">
+                   <div class="overwatch_story">
+                        <h2>오버워치 스토리</h2>
+                        <div class="story active omnic">
+                            <img src="img/%EC%98%B4%EB%8B%89%EC%82%AC%ED%83%9C.jpg" alt="옴닉사태">
+                            <div class="story_desc">
+                                <h3>옴닉사태</h3>
+                                <p>
+                                    옴니카 코포레이션은 "옴니움"의 창조로 로봇 생산업계에 혁명을 일으켰습니다. 하지만 공장의 자가 개선 알고리즘에 문제가 발생해 결국 가동이 중단됩니다. 한 차례 휴식 기간을 지난 옴니움은 재가동되었고, 인류를 공격해 옴닉 사태를 일으킨 적응력이 매우 높은 "옴닉" 부대를 생산했습니다. 이에 대응하기 위해 많은 국가에서 미국의 군인 강화 프로그램과 독일의 크루세이더와 같은 선진 방위 체제를 개발했습니다.
+                                </p>
                             </div>
-                           <h3>옴닉 사태</h3>
-                           <p>옴니카 코포레이션은 "옴니움"의 창조로 로봇 생산업계에 혁명을 일으켰습니다. 하지만 공장의 자가 개선 알고리즘에 문제가 발생해 결국 가동이 중단됩니다. 한 차례 휴식 기간을 지난 옴니움은 재가동되었고, 인류를 공격해 옴닉 사태를 일으킨 적응력이 매우 높은 "옴닉" 부대를 생산했습니다. 이에 대응하기 위해 많은 국가에서 미국의 군인 강화 프로그램과 독일의 크루세이더와 같은 선진 방위 체제를 개발했습니다.</p>
-                       </div>
-                       <div class="story">
-                            <div class="img_wrap">
-                                <img src="img/%EC%B0%BD%EC%84%A4.jpg" alt="창설">
+                        </div>
+                        <div class="story creation">
+                            <img src="img/%EC%B0%BD%EC%84%A4.jpg" alt="창설">
+                            <div class="story_desc">
+                                <h3>오버워치 창설</h3>
+                                <p>
+                                   갈등이 확대되자, UN은 전 세계의 영웅들을 모아 "오버워치"를 창설했습니다. 수차례에 걸친 위험한 전투 끝에 오버워치는 옴니움을 폐쇄하고 전쟁에서 승리했습니다. 그 후 수십 년간 오버워치의 영향력은 계속해서 커졌습니다. 오버워치는 군사 평화 방위를 위해 힘썼을 뿐 아니라, 전염병을 퇴치하고 생태학적 피해를 복구하고 의학 기술의 중요한 돌파구를 개발하는 등 과학 분야에서도 선구적인 업적을 남겼습니다. 오랜 시간 동안 오버워치는 전 세계의 희망의 상징이었습니다.
+                                </p>
                             </div>
-                           <h3>오버워치 창설</h3>
-                           <p>갈등이 확대되자, UN은 전 세계의 영웅들을 모아 "오버워치"를 창설했습니다. 수차례에 걸친 위험한 전투 끝에 오버워치는 옴니움을 폐쇄하고 전쟁에서 승리했습니다. 그 후 수십 년간 오버워치의 영향력은 계속해서 커졌습니다. 오버워치는 군사 평화 방위를 위해 힘썼을 뿐 아니라, 전염병을 퇴치하고 생태학적 피해를 복구하고 의학 기술의 중요한 돌파구를 개발하는 등 과학 분야에서도 선구적인 업적을 남겼습니다. 오랜 시간 동안 오버워치는 전 세계의 희망의 상징이었습니다.</p>
-                       </div>
-                       <div class="story">
-                            <div class="img_wrap">
-                                <img src="img/%EB%B0%98%EB%9E%80.jpg" alt="반란">
+                        </div>
+                        <div class="story demo">
+                            <img src="img/%EB%B0%98%EB%9E%80.jpg" alt="반란">
+                            <div class="story_desc">
+                                <h3>옴닉의 반란</h3>
+                                <p>
+                                    왕의 길에서 과격한 옴닉 단체인 널 섹터가 반란을 일으키자, 강습 사령관 모리슨은 영국 정부의 반대를 무릅쓰고 이 사태에 오버워치가 나서야 할지 고민합니다.
+                                </p>
                             </div>
-                           <h3>옴닉의 반란</h3>
-                           <p>왕의 길에서 과격한 옴닉 단체인 널 섹터가 반란을 일으키자, 강습 사령관 모리슨은 영국 정부의 반대를 무릅쓰고 이 사태에 오버워치가 나서야 할지 고민합니다.</p>
-                       </div>
-                       <div class="story">
-                            <div class="img_wrap">
-                                <img src="img/%EC%86%8C%EC%A7%91.jpg" alt="소집">
+                        </div>
+                        <div class="story recall">
+                            <img src="img/%EC%86%8C%EC%A7%91.jpg" alt="소집">
+                            <div class="story_desc">
+                                <h3>소집</h3>
+                                <p>
+                                    오버워치의 반란이 일어나자 뛰어난 과학자이자 유전자 조작 고릴라인 윈스턴이 오버워치 요원들을 다시 소집할지 고민합니다.
+                                </p>
                             </div>
-                           <h3>오버워치 재소집</h3>
-                           <p>옴닉의 반란으로 인해 윈스턴이 남은 오버워치 요원들을 다시 모으기로 결정합니다.</p>
-                       </div>
-                    </div>
-                    <div class="story_bar">
-                        <ul class="clearfix">
-                            <li class="active">옴닉사태</li>
-                            <li>오버워치 창설</li>
-                            <li>오버워치 몰락</li>
-                            <li>오버워치 소집</li>
-                        </ul>
-                        <div class="line">
-                            <div class="line-process"></div>
                         </div>
                     </div>
+                    <div class="bar_list">
+                        <ul>
+                            <li class="active">옴닉사태</li>
+                            <li>창설</li>
+                            <li>몰락</li>
+                            <li>소집</li>
+                        </ul>
+                        <div class="bar">
+                           <div class="progress_bar"></div>
+                        </div>
+                   </div>
                </div>
-            </div>
-        </section>
+           </div>
+       </section>
     </main>
 </body>
 
