@@ -25,7 +25,7 @@
         background-color: #000;
         color:#fff;
         box-sizing: border-box;
-        background:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/스토리배경.jpg);
+        background:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/story_back.jpg);
        
         background-repeat: no-repeat;
         background-size:cover;
@@ -36,9 +36,18 @@
         width: 100%;
         height: 100vh;
        background:url(../img/game_mode.jpg) no-repeat;
+        background-color:gray;
         background-size:cover;
         background-position:center;
         position: relative;
+    }
+
+    #character{
+        width: 100%;
+        height: 100vh;
+        background:url(../img/캐릭터배경.jpg) no-repeat;
+        background-size:cover;
+        background-position: center;
     }
 
 
