@@ -6,7 +6,6 @@
         position: relative;
         height:100vh;
         box-sizing: border-box;
-        overflow: hidden;
     }
     .container{
         max-width:768px;
@@ -26,12 +25,20 @@
         background-color: #000;
         color:#fff;
         box-sizing: border-box;
-        overflow: hidden;
         background:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/스토리배경.jpg);
        
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center;
+    }
+
+    #mode{
+        width: 100%;
+        height: 100vh;
+       background:url(../img/game_mode.jpg) no-repeat;
+        background-size:cover;
+        background-position:center;
+        position: relative;
     }
 
 
@@ -503,6 +510,87 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
         transition: all 0.3s ease;
     }
 
+    /* game mode */
+
+    .game_mode{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
+
+    .game_mode{
+        width: 90%;
+        margin:0 auto;
+        }
+
+    .game_mode h2{
+        margin-bottom: 20px;
+    }
+    
+    .game_mode .mode_wrap li{
+        float:left;
+        width:50%;
+        height:auto;
+        color:#fff;
+        line-height: 200px;
+        position: relative;
+        text-align: right;
+    }
+
+    .game_mode .mode_wrap li h3{
+        padding:10px;
+        font-size:16px;
+        transition: all 0.3s ease;
+    }
+
+    .game_mode .mode_wrap li img{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%) scale(0.2);
+        transition: all 0.3s ease;
+        
+    }
+
+    #mode .game_mode .mode_wrap li:hover img{
+        transform: translate(-60%,-50%) scale(0.3);
+    }
+    #mode .game_mode .mode_wrap li:hover h3{
+        font-size:20px;
+    }
+
+    .game_mode li.one{
+        background-color: green;
+    }
+
+    .game_mode li.one img{
+        transform: translate(-58%,-50%) scale(0.2);
+    }
+
+    .game_mode li.two{
+            background-color: skyblue;
+    }
+    .game_mode li.two img{
+        transform: translate(-58%,-50%)  scale(0.2);
+    }
+
+    .game_mode li.three{
+            background-color: red;
+    }
+    .game_mode li.three img{
+            transform: translate(-58%,-50%) scale(0.2);
+    }
+
+    .game_mode li.four{
+            background-color: orange;
+    }
+  .game_mode li.four img{
+        transform: translate(-58%,-50%)  scale(0.2);
+    }
+    
+
 
     
 
@@ -783,6 +871,8 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
         #story .overwatch_story .story_desc p{
             font-size:16px;
         }
+        
+    
  
     }
     

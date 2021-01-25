@@ -1,13 +1,7 @@
 $(function(){
-    
-    /* 리사이즈 될떄 */
-    
-    $(window).resize(function(){
-        
-        
-        
+    $('window').resize(function(){
+        $('body').css({'overflow-y':'scroll'})
     })
-    
     
     /* 메뉴클릭시 */
     $('.hamburger').click(function(){
