@@ -1,8 +1,4 @@
 $(function(){
-    $('window').resize(function(){
-        $('body').css({'overflow-y':'scroll'})
-    })
-    
     /* 메뉴클릭시 */
     $('.hamburger').click(function(){
         
@@ -146,6 +142,33 @@ $(function(){
             $(cont).eq(idx).addClass('active')
             $('.progress_bar').css('width','100%')
         }
+    })
+    
+    
+    /* 캐릭터 메뉴 */
+    $('.character_menu .item').click(function(){
+        
+        $(this).addClass('active').siblings().removeClass('active')
+        
+        var value = $(this).attr('data-filter')
+        
+        if(value == 'all'){
+            $('.role').show(2000)
+        }else{
+            $('.role').not('.' + value).hide(1000)
+            $('.role').filter('.' + value).show(1000)
+        }
+        
+    })
+
+    $('.role').mouseenter(function(){
+        var name = $(this).find('span').text()
+        var hero = $(this).find('p').text()
+        var img_src = $(this).attr('data-src')
+        
+        $('.screen h2').text(name)
+        $('.screen p').text(hero)
+        $('.screen img').attr('src',img_src)
     })
     
     
