@@ -28,9 +28,30 @@ $(function(){
         }         
     })
     
-   
+    $(window).scroll(function(){
+        
+        var win_s = $(this).scrollTop()
+        
+        if(win_s >= $('header').offset().top){
+            $('.slider ul li').removeClass('active')
+            $('.slider ul li').eq(0).addClass('active')
+        }if(win_s >= $('#story').offset().top){
+            $('.slider ul li').removeClass('active')
+            $('.slider ul li').eq(1).addClass('active')
+        }if(win_s >= $('#mode').offset().top){
+            $('.slider ul li').removeClass('active')
+            $('.slider ul li').eq(2).addClass('active')
+        }if(win_s >= $('#character').offset().top){
+            $('.slider ul li').removeClass('active')
+            $('.slider ul li').eq(3).addClass('active')
+        }if(win_s >= $('#etc').offset().top){
+            $('.slider ul li').removeClass('active')
+            $('.slider ul li').eq(4).addClass('active')
+        }
+    })
     
-   /* 게임정보 서브 메뉴 클릭시 */
+
+    /* 게임정보 서브 메뉴 클릭시 */
     $('nav .sub a').click(function(){
         
         var story = $('#story').offset().top
@@ -53,9 +74,6 @@ $(function(){
         
     })
 
-    
-    
-    
     
     /* 뉴스 서브메뉴 클릭시 */
     $('nav .sub_two a').click(function(){
