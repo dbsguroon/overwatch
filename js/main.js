@@ -1,9 +1,77 @@
 $(function(){
-    $('.slider li').click(function(){
-         $(this).addClass('active').siblings().removeClass('active')
+    
+    /* 슬라이드 */
+    $('.slider li a').click(function(e){
+        
+        e.preventDefault()
+        
+        var target = $(this).parent()
+        var idx = target.index()
+        
+        var header = $('header').offset().top
+        var story =$('#story').offset().top
+        var mode = $('#mode').offset().top
+        var character = $('#character').offset().top
+        var etc = $('#etc').offset().top
+        
+    
+        if(idx == 0){
+            $('html,body').stop().animate({'scrollTop':header})
+        }else if(idx == 1){
+            $('html,body').stop().animate({'scrollTop':story})
+        }else if(idx == 2){
+            $('html,body').stop().animate({'scrollTop':mode})
+        }else if(idx == 3){
+            $('html,body').stop().animate({'scrollTop':character})
+        }else if(idx == 4){
+            $('html,body').stop().animate({'scrollTop':etc})
+        }         
     })
     
+   
     
+   /* 게임정보 서브 메뉴 클릭시 */
+    $('nav .sub a').click(function(){
+        
+        var story = $('#story').offset().top
+        var mode = $('#mode').offset().top
+        var character = $('#character').offset().top
+        var etc = $('#etc').offset().top
+        
+        var idx = $(this).parent().index()
+        
+        if(idx == 0){
+            $('html,body').stop().animate({scrollTop:story})
+            $('nav .sub').removeClass('open')
+        }else if(idx == 1){
+            $('html,body').stop().animate({scrollTop:character})
+            $('nav .sub').removeClass('open')
+        }else if(idx == 2){
+            $('html,body').stop().animate({scrollTop:mode})
+            $('nav .sub').removeClass('open')
+        }
+        
+    })
+
+    
+    
+    
+    
+    /* 뉴스 서브메뉴 클릭시 */
+    $('nav .sub_two a').click(function(){
+         var etc = $('#etc').offset().top
+         
+         $('html,body').stop().animate({scrollTop:etc})
+         $('nav .sub_two').removeClass('open')
+    })
+    
+    /* 커뮤니티 서브메뉴 클릭시 */
+    $('nav .sub_three a').click(function(){
+         var etc = $('#etc').offset().top
+         
+         $('html,body').stop().animate({scrollTop:etc})
+         $('nav .sub_three').removeClass('open')
+    })
     
     
     /* 메뉴클릭시 */
