@@ -2,14 +2,16 @@
 
     /* 전체 레이아웃 틀 */
     header{
+        display: block;
         padding-top:30px;
         position: relative;
-        height:100vh;
+        height: 100vh;
         box-sizing: border-box;
+        transition: all 0.3s ease;
     }
+
     .container{
         max-width:768px;
-        height: 100%;
         margin:0 auto;
     }
     
@@ -19,8 +21,9 @@
 
 
     #story{
+        display: block;
         width: 100%;
-        height: 100vh;
+        height: 700px;
         position: relative;
         background-color: #000;
         color:#fff;
@@ -29,42 +32,91 @@
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center;
+        transition: all 0.3s ease;
     }
 
     #mode{
+        display: block;
         width: 100%;
-        height: 100vh;
+           height: 700px;
         background:url(../img/game_mode.jpg) no-repeat;
         background-size:cover;
         background-position:center;
         position: relative;
+        transition: all 0.3s ease;
     }
 
+
     #character{
+        display: block;
         width: 100%;
-        height: 100vh;
+        height: 700px;
         background:url(../img/캐릭터배경.jpg) no-repeat;
         background-size:cover;
         background-position: center;
         position: relative;
+        transition: all 0.3s ease;
     }
 
     #etc{
+        display: block;
         width: 100%;
-        height: 100vh;
+        height: 700px;
         position: relative;
+        transition: all 0.3s ease;
+        background-color: #fff;
     }
 
 
     footer{
+        display: block;
         width: 100%;
-        height: 100vh;
+        height: 700px;
         background-color: #f5f5f7;
         padding: 20px 0;
-        box-sizing: border-box;
     }
 
+    /* slider */
+    .slider{
+        position: fixed;
+        right:0;
+        top:50%;
+        transform: translateY(-50%);
+        font-size:12px;
+        z-index: 20;
+    }
 
+    .slider li{
+        margin: 10px;
+    }
+    .slider li.active a{
+        color:red;
+    }
+  
+    .slider li a{
+        display: block;
+        text-align: center;
+        text-align: right;
+        color:skyblue;
+        font-weight: bold;
+        transition: all 0.3s ease; 
+    }
+
+    .indicator{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: skyblue;
+        border-radius: 50%;
+        text-align: center;
+        margin:0 auto;
+        margin-left: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .slider li.active .indicator{
+        background-color: red;
+    }
 
 
     /* 햄버거 메뉴 */
@@ -1018,6 +1070,14 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
         }
         .community h2{
             font-size:24px;
+        }
+        
+        /* footer*/
+        .age{
+            margin-top: 40px;
+        }
+        .footer_bottom .age .old.twenty{
+            margin-bottom: 25px;
         }
     }
      

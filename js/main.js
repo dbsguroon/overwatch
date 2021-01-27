@@ -1,4 +1,11 @@
 $(function(){
+    $('.slider li').click(function(){
+         $(this).addClass('active').siblings().removeClass('active')
+    })
+    
+    
+    
+    
     /* 메뉴클릭시 */
     $('.hamburger').click(function(){
         
@@ -66,7 +73,17 @@ $(function(){
          })
         
     })
-     $('.modal .close_btn').click(function(){
+    
+    $('.buy_overwatch').click(function(){
+        $('.modal').addClass('open')
+          $('body').css({
+             overflow:'hidden',
+             height:'100%',
+         })
+        
+    })
+    
+    $('.modal .close_btn').click(function(){
         $('.modal').removeClass('open')
         $('body').css({
              overflow:'auto',
