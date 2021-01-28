@@ -299,8 +299,8 @@
     .header_info{
        width: 60vw;
        position: absolute;
-       left:50vw;
-       top:50vh;
+       left: 50%;
+       top: 50%;
        transform: translate(-50%, -50%);
     }
     .header-title svg{
