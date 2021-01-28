@@ -6,7 +6,6 @@ body, div, ul, li, dl, dd, dt, ol, h1, h2, h3, h4, h5, h6, input,fieldset, legen
 /* body*/
 body{
  font-family: 'Noto Sans KR', sans-serif;
-    overflow-x: hidden;
 }
 
 /* a 초기화*/
