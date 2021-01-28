@@ -187,7 +187,7 @@ $(function(){
         $('.modal').removeClass('open')
         $('body').css({
              overflow:'auto',
-             height:'auto',
+             height:'100%',
          })
         
     })
@@ -230,7 +230,7 @@ $(function(){
         $('.login_form').hide()
           $('body').css({
              overflow:'auto',
-             height:'auto',
+             height:'100%',
          })
     })
     
