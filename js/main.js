@@ -116,7 +116,7 @@ $(function(){
         $(window).scroll(function(){
             var w_scroll = $(window).scrollTop()
             
-            if(w_scroll > 400){
+            if(w_scroll > 600){
             $('.hamburger').removeClass('open')
             $('nav>ul').removeClass('open') 
             }
@@ -126,6 +126,20 @@ $(function(){
     /* 서브메뉴 클릭시 */
     
     $('nav>ul>li>a').click(function(){
+        
+        /* 600이상 스크롤내리면 서브메뉴 자동으로 닫침 */
+        $(window).scroll(function(){
+            var win_s = $(this).scrollTop()
+            
+            if(win_s > 600){
+                $('.sub').removeClass('open')
+                $('.sub_two').removeClass('open')
+                $('.sub_three').removeClass('open')
+            }
+            
+        })
+        
+        
         var target = $(this)
         
         if(target.siblings('ul').hasClass('open')){
