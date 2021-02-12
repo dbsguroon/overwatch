@@ -236,7 +236,10 @@ $(function(){
     
     
     /* stroy  progress bar*/
-    $('.bar_list li').click(function(){
+    $('.bar_list li').click(function(e){
+        
+        e.preventDefault()
+        
         $(this).addClass('active').prevAll().addClass('active')
         $(this).nextAll().removeClass('active')
         var idx = $(this).index()
@@ -263,7 +266,9 @@ $(function(){
     
     
     /* 캐릭터 메뉴 */
-    $('.character_menu .item').click(function(){
+    $('.character_menu .item').click(function(e){
+        
+        e.preventDefault()
         
         $(this).addClass('active').siblings().removeClass('active')
         
