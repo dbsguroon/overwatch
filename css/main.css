@@ -23,7 +23,7 @@
     #story{
         display: block;
         width: 100%;
-        height: 700px;
+        height: 800px;
         position: relative;
         background-color: #000;
         color:#fff;
@@ -38,7 +38,7 @@
     #mode{
         display: block;
         width: 100%;
-        height: 700px;
+        height: 800px;
         background:url(../img/game_mode.jpg) no-repeat;
         background-size:cover;
         background-position:center;
@@ -50,7 +50,7 @@
     #character{
         display: block;
         width: 100%;
-        height: 700px;
+        height: 800px;
         background:url(../img/캐릭터배경.jpg) no-repeat;
         background-size:cover;
         background-position: center;
@@ -61,7 +61,7 @@
     #etc{
         display: block;
         width: 100%;
-        height: 700px;
+        height: 800px;
         position: relative;
         transition: all 0.3s ease;
         background-color: #fff;
@@ -244,9 +244,10 @@
             background: gold;
     }
     nav>ul>li a{
+        vertical-align: bottom;
         display: block;
-        padding:20px;
-        font-size:15px;
+        padding:10px;
+        font-size:14px;
         border-radius:5px;
         border-bottom: 1px solid #cfcfcf;
         background-color: skyblue;
@@ -257,7 +258,7 @@
         font-family: 'FontAwesome';
         position: absolute;
         right:20px;
-        top:22px;
+        top:13px;
         font-size:20px;
         width: 20px;
         height: 20px;
@@ -287,7 +288,7 @@
         background-color: skyblue;
         color:#fff;
         padding:5px;
-        font-size:14px;
+        font-size:12px;
         text-indent: 20px;
     }
 
@@ -661,7 +662,7 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
     }
 
    .game_mode .mode_wrap li:hover img{
-        transform: translate(-60%,-50%) scale(0.3);
+        transform: translate(-60%,-50%) scale(0.26);
     }
    .game_mode .mode_wrap li:hover h3{
         font-size:18px;
@@ -675,28 +676,28 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
     }
 
     .game_mode li.one img{
-        transform: translate(-58%,-50%) scale(0.2);
+        transform: translate(-58%,-50%) scale(0.25);
     }
 
     .game_mode li.two{
             background-color: skyblue;
     }
     .game_mode li.two img{
-        transform: translate(-58%,-50%)  scale(0.2);
+        transform: translate(-58%,-50%)  scale(0.25);
     }
 
     .game_mode li.three{
             background-color: red;
     }
     .game_mode li.three img{
-            transform: translate(-58%,-50%) scale(0.2);
+            transform: translate(-58%,-50%) scale(0.25);
     }
 
     .game_mode li.four{
             background-color: orange;
     }
     .game_mode li.four img{
-            transform: translate(-58%,-50%)  scale(0.2);
+            transform: translate(-58%,-50%)  scale(0.23);
     }
 
     /* character*/
@@ -726,7 +727,7 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
     }
     .character_menu li.item{
         float:left;
-        padding:5px 30px;
+        padding:5px 27px;
         background-color:#fff;
         border-right: 1px solid #cfcfcf;
         cursor: pointer;
@@ -744,7 +745,7 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
 
     .all_character li{
         cursor: pointer;
-        width: 12%;
+        width: 16%;
         padding: 1%;
         box-sizing: border-box;
         text-align: center;
@@ -758,6 +759,9 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
            transform: scale(1.2)
     }
     .all_character li img{
+        max-width: 70px;
+        object-fit: cover;
+        min-width: 47px;
         width: 100%;
         box-sizing: border-box;
         border-radius: 5px;
@@ -783,7 +787,7 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
 
     .news{
         width: 90%;
-        margin:0 auto 20px auto;
+        margin:0 auto 30px auto;
     }
 
     .news h2{
@@ -821,6 +825,7 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
         width: 40%;
         object-fit:cover;
         transition: all 0.3s ease;
+        min-width: 130px;
         
         
     }
@@ -1051,16 +1056,16 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
         
         /* game mode*/
         .game_mode li.one img{
-            transform:translate(-50%,-50%) scale(0.3);
+            transform:translate(-50%,-50%) scale(0.33);
         }
         .game_mode li.two img{
-            transform:translate(-50%,-50%) scale(0.3); 
+            transform:translate(-50%,-50%) scale(0.33); 
         }
         .game_mode li.three img{
-            transform:translate(-50%,-50%) scale(0.3); 
+            transform:translate(-50%,-50%) scale(0.33); 
         }
         .game_mode li.four img{
-            transform:translate(-50%,-50%) scale(0.3); 
+            transform:translate(-50%,-50%) scale(0.33); 
         }
         .game_mode .mode_wrap li:hover img{
         transform: translate(-60%,-50%) scale(0.4);
@@ -1084,6 +1089,10 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
         }
         .character_menu li.item{
             padding: 10px 30px;
+        }
+        
+        .all_character li{
+            width: 12%;
         }
         
         /* etc */
@@ -1326,10 +1335,10 @@ background:url(../img/%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%B0%B0%EA%B2%BD.jpeg) no-rep
             max-width: 1280px;
         }
         .news{
-            float:left;
-            width: 48%;
+            float: left;
+            width: 46%;
             height: 493px;
-            margin-right: 2%;
+            margin-right: 4%;
             margin-bottom: 0;
         }
         .news h2{
