@@ -194,40 +194,42 @@ $(function(){
     
     /* 로그인창 */
     
-    var toggle_btn = $('.form_box .toggle_btn'),
-        register = $('.form_box #register'),
-        user_login = $('.form_box #login'),
-        btn_bg = $('.form_box #btn_bg')
+    var login_bg = $('.top_btn .login_bg')
+    var login_li = $('.top_btn>ul>li')
     
-    toggle_btn.click(function(){
-        var target = $(this)
-        var idx = target.index()
+    $(login_li).click(function(){
+        
+        var idx = $(this).index()
         
         console.log(idx)
         
-        if (idx == 1){
-            user_login.show()
-            register.hide()
-            btn_bg.css('left','0')
-            
-            
-        }else if(idx ==2){
-            register.show()
-            user_login.hide()
-            btn_bg.css('left','166px')
+        if(idx == 0){
+            $(login_bg).css({
+                left:'0'
+            })
+            $('.login_group>form').eq(1).removeClass('active')
+            $('.login_group>form').eq(0).addClass('active')
+        }else{
+            $(login_bg).css({
+                left:'50%'
+            })
+            $('.login_group>form').eq(0).removeClass('active')
+            $('.login_group>form').eq(1).addClass('active')
         }
+        
     })
+    
     
     /*로그인 close 버튼 */
     $('.login a').click(function(){
-         $('.login_form').show() 
+         $('.login_overlay').show() 
          $('body').css({
              overflow:'hidden',
              height:'100%',
          })
     })
-    $('.login_close').click(function(){
-        $('.login_form').hide()
+    $('.login_form .close_btn').click(function(){
+        $('.login_overlay').hide()
           $('body').css({
              overflow:'auto',
              height:'100%',
