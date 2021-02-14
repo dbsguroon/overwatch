@@ -368,6 +368,9 @@
         font-size:14px;
         color:#fff;
     }
+    .flatform .close_btn i{
+        cursor: pointer;
+    }
 
     .flatform h2{
         font-size:14px;
@@ -390,6 +393,7 @@
         text-align: center;
         box-sizing: border-box;
         background-color: #fff;
+        cursor: pointer;
     }
 
     .flatform li:nth-child(2){
@@ -409,6 +413,12 @@
         font-size:12px;
         background-color: orange;
         color:#fff;
+        transition: all 0.3s ease;
+    }
+
+    .flatform li a:hover{
+        color:#000;
+        font-weight: bold;
     }
 
 
@@ -436,9 +446,9 @@
     background-color: #fff;
     z-index: 40;
     width: 400px;
-    max-width: 100%;
+    max-width: 95%;
     height: 358px;
-    max-height: 100%;
+    max-height: 95%;
     padding: 20px;
     box-sizing: border-box;
     overflow: auto;
